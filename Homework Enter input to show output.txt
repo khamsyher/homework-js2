@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="box-login">
+        <form action="" class=" form-login">
+            <h1>HOLLE WORLD</h1>
+            <input type="text" placeholder="Enter your name" id="inputName">
+            <button  type="button" onclick="getinfo()" value="Login" >Say Hi</button>
+            <!-- <input type="S" value="Login" onclick="getinfo()"> -->
+            <div id="displayName" value="Login" >
+                Hi. Mark
+            </div>
+        </form>
+        
+    </div>
+    
+    <script>
+        console.log("Hello world")
+        document.write("Hello from javascript")
+        
+
+        function getinfo(){
+            const input = document.getElementById("inputName").value
+            const display = document.getElementById("displayName").value
+            if (input== "Hi Mark"){
+                alert("susessfuly")
+                return false
+            }
+            else{
+                alert("failed ")
+            }
+            document.getElementById('inputName')
+            console.log(display)
+        
+        }
+        
+        
+    </script>
+    
+</body>
+</html>
